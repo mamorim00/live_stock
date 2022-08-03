@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <title>table forex</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="static/css/styles.css">
+
+   <script type="text/javascript">
+    setTimeout(function () { 
+      location.reload();
+    }, 120 * 1000);
+    </script>
+
+   <body>
+    <a href="table_crypto">
+        <button class= "button" >table crypto</button>
+        </a>
+        <a href="/">
+
+        <button class= "button" >table forex</button>
+        </a>
+        <table id='stock-table' class='table'>
+            <thead>
+                {% for header in headings %}
+                <th>{{ header }}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                    </tr>
+                
+                {% endfor %}
+            </tbody>
+      </table>
+   </body>
+</html>

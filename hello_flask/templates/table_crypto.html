@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-   <title>To-Do List</title>
-   <link rel="stylesheet" href="styles.css">
+   <title>table crypto</title>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="script.js"></script>
+   <link rel="stylesheet" href="static/css/styles.css">
+
+   
+   <script type="text/javascript">
+    setTimeout(function () { 
+      location.reload();
+    }, 120 * 1000);
+    </script>
 
    <body>
+        <a href="table_crypto">
+        <button class= "button" >table forex</button>
+        </a>
+        <a href="/table_forex">
+
+        <button class= "button" >table crypto</button>
+        </a>
         <table id='stock-table' class='table'>
             <thead>
                 {% for header in headings %}
@@ -23,5 +36,6 @@
                 {% endfor %}
             </tbody>
       </table>
+      <a>From USD</a>
    </body>
 </html>
