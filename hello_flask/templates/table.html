@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <title>To-Do List</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="script.js"></script>
+
+   <body>
+        <table id='stock-table' class='table'>
+            <thead>
+                {% for header in headings %}
+                <th>{{ header }}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                    </tr>
+                
+                {% endfor %}
+            </tbody>
+      </table>
+   </body>
+</html>
